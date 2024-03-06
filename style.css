@@ -22,19 +22,18 @@
 
 .swiper {
     width: 80%;
-    height: 60vh;
+    height: 60rem;
 } 
 
 .slidebox{
-    border: 2px solid black;
     height: 22rem;
-    width: 15em ;
+    width: 15rem ;
     margin: 10px;
     border-radius: 5px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
   }
 
   .slidebox:hover {
@@ -52,20 +51,12 @@
         margin: 0;
         border: 2px solid black;
         border-radius: 5px;
-        height:8em;
+        height:8rem;
     }
     
-    /* .slidebox {
-        margin: 1em;
-        height: 25em;
-        width: 18em;
-        background-color: antiquewhite;
-        border-radius: 10px;
-        box-shadow: 10px;
-    } */
     
     .pic {
-        height: 14em;
+        height: 14rem;
         width: 100%;
         border-radius: 5px;
     
@@ -99,21 +90,81 @@
     
 
   /* Tablets and under */
-/* @media (max-width:768px) {
-    .gbox  {
-          width: 14em;
+@media (max-width:768px) {
+    .slidebox  {
+          width: 15em;
           height: 20em;
+          margin: 10px;
       }
   
-      .games{
-          display: grid;
-          grid-template-columns: 1fr 1fr;
+      /* .slidebox{ */
+          /* display: grid;
+          grid-template-columns: 1fr ;
           justify-items: center;
-          align-items: center;
+          align-items: center; */
       
-      }
+      /* } */
+
+      .container {
+        width: 100%;
+        height: fit-content;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    .swiper-wrapper{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .swiper-slide{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin:15px ;
+    }
+    
+    .swiper {
+        width: 80%;
+        height: fit-content;
+        margin: 10px;
+    } 
+
+    .gtxt{
+        margin: 0;
+        border: 2px solid black;
+        border-radius: 5px;
+        height:4rem;
+        width: 100%;
+    }
+    .name {
+        height:1em ;
+        text-align: center;
+        background-color: gray;
+    }
+    
+    .title{
+        text-align: center;
+        background-color: white ;
+        height:1em ;
+        margin: 0;
+    }
+    
+    .footul{
+        margin: 0;
+        padding: 10px;
+        display:flex ;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 2em ;
+        background-color: white;
+        list-style-type: none;
+    
+    }
+    
   
-    }   */
+    }  
 
     /* Mobile
 @media (max-width:500px) {
